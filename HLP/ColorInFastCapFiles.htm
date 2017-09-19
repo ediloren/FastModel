@@ -1,0 +1,72 @@
+<!doctype html public "-//w3c//dtd html 4.0 frameset//en">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Enrico Di Lorenzo">
+  <meta name="GENERATOR" content="Enrico Di Lorenzo">
+  <meta name="DESCRIPTION" content="Help File">
+  <title>Welcome to FastModel</title>
+  <link href="helpstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<BODY>
+
+<H1>Color in FasterCap / FastCap2 Files</H1>
+
+<p>FastModel supports coloring and transparency of panels according to an extension of the FasterCap / FastCap2 file format. Two modes are supported:
+
+<ul>
+  <li>Charge density coloring
+  <li>Geometry user-defined coloring
+</ul>
+
+
+<H2>Charge density coloring</H1>
+
+<p>If the input file contains charge density information, this information will be used to provide a color map for the FastModel view of the geometry.
+<br>Remark: you can see the model coloring only in 'solid' view. Wireframe and hidden lines view modes are not colored.
+
+<p><a href="images/FastModelViewChargeDensity.png"><img src="images/FastModelViewChargeDensity.png" width=512 height=387 border=0></a>
+
+<p>The charge density information can be added as a floating point value at the end of FasterCap / FastCap2 'Q' or 'T' statements, see the following picture for an example:
+
+<p><a href="images/FastCapViewChargeDensity.png"><img src="images/FastCapViewChargeDensity.png" width=512 height=250 border=0></a>
+
+<p>FastModel automatically associates a color map to the charge density values, from the minimum to the maximum value.
+
+<p>FasterCap has an option to output the charge density information in a FasterCap / FastCap2 file format, so you can readily visualize the information inside a FastModel view. See FasterCap on-line help for further information about this option.
+
+
+<H2>Geometry user-defined coloring</H1>
+
+<p>If the input file contains color information, this information will be used to color the panels shown in the FastModel view of the geometry.
+<br>Remark: you can see the model coloring only in 'solid' view. Wireframe and hidden lines view modes are not colored.
+
+<p><a href="images/FastModelViewColorModel.png"><img src="images/FastModelViewColorModel.png" width=512 height=387 border=0></a>
+
+<p>The color information can be added as a hexadecimal, 4 bytes value at the end of FasterCap / FastCap2 'C', 'D', 'Q' or 'T' statements.
+<p>The value must be prefixed with the '0x' string, followed by the four bytes. The four bytes represent red, green, blue and transparency information respectively.
+<br>For instance, the following statement defines a triangular panel in red color, fully opaque:
+
+<p><code>
+T mytri 0 0 0  0 1 0  1 0 0  0xff0000ff
+</code>
+
+<p>In general:
+
+<ul>
+  <li>'Q' and 'T' statements: color information at the end of a panel definition will change the color of that specific panel
+  <li>'C' and 'D' statements: color information at the end of a conductor or dielectric definition will change the color of the whole conductor or dielectric. Remark: panel color has more priority than conductor / dielectric color. You can therefore specify a conductor / dielectric color, and still define a different color for one or more panels composing that conductor or dielectric.
+  <li>No color information: the panels will have the default color. 
+</ul>
+
+<p>This feature can be useful, for instance, to picture in a different color conductor and dielectric interfaces. The following pictures show an example of geometry files including color information, used to produce the previous picture:
+
+<p><p><a href="images/FastCapViewColorList.png"><img src="images/FastCapViewColorList.png" width=512 height=250 border=0></a>
+
+<p><p><a href="images/FastCapViewColorGeo.png"><img src="images/FastCapViewColorGeo.png" width=512 height=250 border=0></a>
+
+
+</body>
+</html>

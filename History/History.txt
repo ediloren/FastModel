@@ -1,0 +1,183 @@
+FastModel History
+==================
+Copyright (c) 2017
+FastFieldSolvers S.R.L.  http://www.fastfieldsolvers.com
+==================
+
+Version 3.0, 2017/08/24
+- LGPL version
+
+Version 2.6, 2016/12/23
+- Time limit removed
+
+Version 2.5.8, 2015/12/22
+- License renewed
+
+Version 2.5.7, 2014/12/21
+- License renewed
+
+Version 2.5.6, 2014/06/30
+- License renewed
+
+Version 2.5.5, 2013/12/10
+- License renewed
+
+Version 2.5.4, 2013/06/30
+- License renewed
+
+Version 2.5.3, 2013/01/07
+- Updated FasterCap launcher, for improved compatibility with the multiplatform version of FasterCap
+
+Version 2.5.2, 2012/12/31
+- Updated License
+
+Version 2.5.1, 2012/11/21
+- Updated the License manager
+
+Version 2.5, 2012/04/16
+- Added support for complex valued permittivities in FasterCap files
+
+Version 2.4, 2011/12/28
+- Inclusion of FasterCap interface, to launch FasterCap from FastModel, as done for FastCap2 and FastHenry2
+- Support for color mapping of FastCap2 files containing charge densities information (no light, flat colors)
+- Support of coloring and transparency of FastCap models (supporting lighting model, with shadows)
+- Fixes an issue regarding line end characters
+- Fix of an issue about file names containing the underscore character when visualizing FastCap2 list files
+
+Version 2.32, 2011/01/08
+- New cursors for rotate near, far and zoom
+
+Version 2.31, 2011/01/01
+- New license version
+
+Version 2.3, 2010/04/30
+- Added the possibility to run as standard user, once installed
+  as administrator
+- Added the possibility to cancel text in log window
+
+Version 2.2, 2010/01/02
+- Minor bug fixing
+
+Version 2.1, 2007/12/30
+- Windows Vista compatibility
+
+Version 1.3 Beta, 2005/12/22
+- Added 'getting started' tutorials in the Help files
+
+Version 1.2 Beta, 2005/05/24
+- Fixed ambient light bug in FastModel View and print to EPS
+- Made views visibility status permanent between different
+  sessions (closing and re-opening FastModel)
+- Updated help files
+
+Version 1.1 Beta, 2004/12/22
+- Added support for Automated FastCap and FastHenry
+
+Version 1.01 Beta, 2004/10/07
+- Fixed problems with license
+
+Version 1.0 Beta, 2004/09/30
+- Fixed error messages with FastHenry non-uniform ground planes
+
+Version 0.991 Alpha, 2004/06/30
+- Fixed MS comctrl.dll bug affecting W2000/XP when resizing
+  the project browser
+
+Version 0.99 Alpha, 2004/03/26
+- Added Model View color preferences
+- Added Docking Windows save/retrieve status
+
+Version 0.985 Alpha, 2004/02/09
+- Fixed rotation modes (far and near)
+- Fixed some node-related errors when importing FastHenry files 
+  containing GND planes
+
+Version 0.98 Alpha, 2003/12/30
+- Added wireframe/hiddenlines/solid icons on toolbar
+- Added gradient background
+- Allow print / print preview of solid FastModel view
+- Added cartesian axes in FastModel view
+- Fixed 'View' manu items to match the popup menu in FastModel view
+- Inhibited 'Print to EPS' feature in 'File' menu when FastModel
+  view is set to 'solid'
+
+Version 0.951 Alpha, 2003/08/22
+- Fixed bug causing FastModel to hang when typing in FastHenry view
+  under some recent Windows / Service Pack releases 
+
+Version 0.95 Alpha, 2003/06/30
+- Added 'solid' view capability
+- Updated FastHenry verison in FastModel distribution
+
+Version 0.936 Alpha, 2003/04/18
+- Updated FastCap verison in FastModel distribution
+
+Version 0.935 Alpha, 2003/03/31
+- Fixed minor memory leaks
+
+Version 0.931 Alpha, 2003/01/13
+- Corrected bug with FastCap dielectric interface file watch / save
+
+Version 0.93 Alpha, 2002/12/31
+- Enabled window refresh during lengthy import operations
+- Corrected bug on FastCap file watch showing up when deleting FastCap files
+  outside FastModel
+- Corrected bug in FasCap View caption title when creating a new FastCap View
+- Load / Save buttons on toolbar now work for the active view and not for
+  the whole project 
+- Corrected bug in Output window engine which printed stray characters
+
+Version 0.91 Alpha, 2002/11/18
+- Wrapped up application into installer, to update also required system files
+- Changed the toolbar look
+
+Version 0.90 Alpha, 2002/09/30
+- Added FastCap file monitor capability
+
+Version 0.87 Alpha, 2002/06/30
+- Corrected bugs in edit views under Windows NT and 2000
+
+Version 0.85 Alpha, 2002/04/01
+- Added FastHenry uniform ground planes visualization
+- Corrected bugs with file titles in dialogs
+- Minor bugs corrections
+
+Version 0.8 Alpha, 2002/01/28
+- Added full FastCap remote control
+- Changed File menu entries order, added Close option
+- Corrected minor bugs
+
+Version 0.51 Alpha, 2001/10/31
+- Corrected minor bugs on FastModel closure
+
+Version 0.5 Alpha, 2001/10/01
+- Added full FastCap files support
+- Added Project Browser window
+
+Version 0.39 Alpha, 2001/08/30
+- Added 2D view capability
+- Modified zoom to be smoother and faster 
+- Updated the 3D rendering mechanism to remove the 'memory effect' on
+  big models 
+- Updated the 3D rendering mechanism to be faster
+
+Version 0.32 Alpha, 2001/08/14
+- corrected a bug in the model view 'print to EPS' capability arising
+  from hidden lines removal
+
+Version 0.31 Alpha, 2001/08/07
+- added model view print and print preview capability 
+- added model view print to EPS capability
+
+Version 0.3 Alpha, 2001/06/30
+- added FastHenry control 
+
+Version 0.2 Alpha, 2001/04/22
+- added basic ground plane handling
+- minor bug corrections (e.g. about cursors)
+
+Version 0.11 Alpha, 2001/03/30
+- minor bug correction about use of tabs in FastHenry view
+ 
+Version 0.1 Alpha, 2001/03/20
+- first release

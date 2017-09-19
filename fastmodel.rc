@@ -1,0 +1,995 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\fastmodel.ico"
+IDR_FASTMODELTYPE       ICON    DISCARDABLE     "res\\fastmodelDoc.ico"
+IDR_FASTCAPTYPE         ICON    DISCARDABLE     "res\\idr_fastcap.ico"
+IDR_FASTHENRYTYPE       ICON    DISCARDABLE     "res\\idr_fast.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_RUN_FASTHENRY
+    BUTTON      ID_RUN_FASTCAP
+    BUTTON      ID_RUN_FASTERCAP
+    SEPARATOR
+    BUTTON      ID_VIEW_DISPLAY_WIREFRAME
+    BUTTON      ID_VIEW_DISPLAY_HIDDENLINES
+    BUTTON      ID_VIEW_DISPLAY_SOLID
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Project\tCtrl+N",        ID_FILE_NEW_PROJ
+        MENUITEM "&Open Project\tCtrl+O",       ID_FILE_OPEN_PROJ
+        MENUITEM "&Close Project",              ID_FILE_CLOSE_PROJ
+        MENUITEM "&Save Project\tCtrl+S",       ID_FILE_SAVE_PROJ
+        MENUITEM "Save Project &As...",         ID_FILE_SAVE_AS_PROJ
+        MENUITEM SEPARATOR
+        MENUITEM "Import",                      ID_IMPORT_FILE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Fast&Cap2 View",              ID_VIEW_FASTCAP_VIEW
+        MENUITEM "Fast&Henry2 View",            ID_VIEW_FASTHENRY_VIEW
+        MENUITEM "&Project Window",             ID_VIEW_PROJECT
+        MENUITEM "&Output Window",              ID_VIEW_OUTPUT
+        MENUITEM SEPARATOR
+        MENUITEM "Clear Output Window",         ID_VIEW_CLEAR_OUTPUT_WIN
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About FastModel...",         ID_APP_ABOUT
+    END
+END
+
+IDR_FASTMODELTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Project\tCtrl+N",        ID_FILE_NEW_PROJ
+        MENUITEM "&Open Project\tCtrl+O",       ID_FILE_OPEN_PROJ
+        MENUITEM "&Close Project",              ID_FILE_CLOSE_PROJ
+        MENUITEM "&Save Project\tCtrl+S",       ID_FILE_SAVE_PROJ
+        MENUITEM "Save Project &As...",         ID_FILE_SAVE_AS_PROJ
+        MENUITEM SEPARATOR
+        MENUITEM "Import",                      ID_IMPORT_FILE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print to &EPS",               ID_FILE_PRINT_TO_EPS
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT, GRAYED
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY, GRAYED
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE, GRAYED
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Fast&Cap2 View",              ID_VIEW_FASTCAP_VIEW
+        MENUITEM "Fast&Henry2 View",            ID_VIEW_FASTHENRY_VIEW
+        MENUITEM "&Project Window",             ID_VIEW_PROJECT
+        MENUITEM "&Output Window",              ID_VIEW_OUTPUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Zoom All",                   ID_VIEW_ZOOM_ALL
+        POPUP "&Display"
+        BEGIN
+            MENUITEM "&Wireframe",                  ID_VIEW_DISPLAY_WIREFRAME
+
+            MENUITEM "&Hidden Lines",               ID_VIEW_DISPLAY_HIDDENLINES
+
+            MENUITEM "&Solid",                      ID_VIEW_DISPLAY_SOLID
+        END
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&3D (Perspective)",           ID_VIEW_DISPLAY_3D
+            MENUITEM "&2D (Orthographic)",          ID_VIEW_DISPLAY_2D
+        END
+        POPUP "&Autoset"
+        BEGIN
+            MENUITEM "&XY Plane",                   ID_VIEW_AUTOSET_XY
+            MENUITEM "&YZ Plane",                   ID_VIEW_AUTOSET_YZ
+            MENUITEM "&ZX Plane",                   ID_VIEW_AUTOSET_ZX
+        END
+        MENUITEM "&Properties",                 ID_VIEW_PROPERTIES
+        MENUITEM "Clear Output Window",         ID_VIEW_CLEAR_OUTPUT_WIN
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About FastModel...",         ID_APP_ABOUT
+    END
+END
+
+IDR_FASTMODELTYPE_CNTR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Project\tCtrl+N",        ID_FILE_NEW_PROJ
+        MENUITEM "&Open Project\tCtrl+O",       ID_FILE_OPEN_PROJ
+        MENUITEM "&Close Project",              ID_FILE_CLOSE_PROJ
+        MENUITEM "&Save Project\tCtrl+S",       ID_FILE_SAVE_PROJ
+        MENUITEM "Save Project &As...",         ID_FILE_SAVE_AS_PROJ
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+END
+
+IDR_FASTHENRYTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open FastHenry2 File",        ID_FILE_OPEN_FASTHENRY
+        MENUITEM "Save FastHenry2 File",        ID_FILE_SAVE_FASTHENRY
+        MENUITEM "Save FastHenry2 File As...",  ID_FILE_SAVE_AS_FASTHENRY
+        MENUITEM "Close FastHenry2 File",       ID_FILE_CLOSE_FASTHENRY
+        MENUITEM SEPARATOR
+        MENUITEM "&New Project\tCtrl+N",        ID_FILE_NEW_PROJ
+        MENUITEM "&Open Project\tCtrl+O",       ID_FILE_OPEN_PROJ
+        MENUITEM "&Close Project",              ID_FILE_CLOSE_PROJ
+        MENUITEM "&Save Project\tCtrl+S",       ID_FILE_SAVE_PROJ
+        MENUITEM "Save Project &As...",         ID_FILE_SAVE_AS_PROJ
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        , GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Fast&Cap2 View",              ID_VIEW_FASTCAP_VIEW
+        MENUITEM "Fast&Henry2 View",            ID_VIEW_FASTHENRY_VIEW
+        MENUITEM "&Project Window",             ID_VIEW_PROJECT
+        MENUITEM "&Output Window",              ID_VIEW_OUTPUT
+        MENUITEM SEPARATOR
+        MENUITEM "Clear Output Window",         ID_VIEW_CLEAR_OUTPUT_WIN
+    END
+    POPUP "Model"
+    BEGIN
+        MENUITEM "&Update Model",               ID_FASTHENRY_UPDATE_MODEL
+        MENUITEM "&New Window",                 ID_MODEL_NEW_WINDOW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About FastModel...",         ID_APP_ABOUT
+    END
+END
+
+IDR_FASTCAPTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New FastCap2 File",           ID_FILE_NEW_FASTCAP
+        MENUITEM "Open FastCap2 File",          ID_FILE_OPEN_FASTCAP
+        MENUITEM "Save FastCap2 File",          ID_FILE_SAVE_FASTCAP
+        MENUITEM "Save FastCap2 File As...",    ID_FILE_SAVE_AS_FASTCAP
+        MENUITEM "Save FastCap2 File All",      ID_FILE_SAVE_FASTCAP_ALL
+        MENUITEM "Close FastCap2 File",         ID_FILE_CLOSE_FASTCAP
+        MENUITEM SEPARATOR
+        MENUITEM "&New Project\tCtrl+N",        ID_FILE_NEW_PROJ
+        MENUITEM "&Open Project\tCtrl+O",       ID_FILE_OPEN_PROJ
+        MENUITEM "&Close Project",              ID_FILE_CLOSE_PROJ
+        MENUITEM "&Save Project\tCtrl+S",       ID_FILE_SAVE_PROJ
+        MENUITEM "Save Project &As...",         ID_FILE_SAVE_AS_PROJ
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Fast&Cap2 View",              ID_VIEW_FASTCAP_VIEW
+        MENUITEM "Fast&Henry2 View",            ID_VIEW_FASTHENRY_VIEW
+        MENUITEM "&Project Window",             ID_VIEW_PROJECT
+        MENUITEM "&Output Window",              ID_VIEW_OUTPUT
+        MENUITEM SEPARATOR
+        MENUITEM "Clear Output Window",         ID_VIEW_CLEAR_OUTPUT_WIN
+    END
+    POPUP "Model"
+    BEGIN
+        MENUITEM "&Update Model",               ID_FASTCAP_UPDATE_MODEL
+        MENUITEM "&New Window",                 ID_MODEL_NEW_WINDOW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About fastmodel...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW_PROJ,       VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN_PROJ,      VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE_PROJ,      VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_FASTMODELTYPE_CNTR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW_PROJ,       VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN_PROJ,      VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE_PROJ,      VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 210, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FastModel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FastModel Version 3.0",IDC_STATIC,40,15,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017 FastFieldSolvers S.R.L.",IDC_STATIC,
+                    39,30,148,8
+    DEFPUSHBUTTON   "OK",IDOK,171,57,32,14,WS_GROUP
+    LTEXT           "http://www.fastfieldsolvers.com",IDC_STATIC,39,41,144,8
+    PUSHBUTTON      "Show License",IDC_SHOW_LICENSE,39,57,52,14
+END
+
+IDD_OGLVIEWPROPS DIALOG DISCARDABLE  0, 0, 242, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,65,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,130,65,40,15
+    PUSHBUTTON      "Button3",IDC_BUTTON_WIREFRAME_COLOR,10,15,15,15,
+                    BS_BITMAP
+    LTEXT           "Wireframe color",IDC_STATIC,33,17,55,12
+    PUSHBUTTON      "Button3",IDC_BUTTON_SOLID_COLOR,10,35,15,15,BS_BITMAP
+    LTEXT           "Solid color",IDC_STATIC,33,38,55,12
+    PUSHBUTTON      "Button3",IDC_BUTTON_AMBIENT_LIGHT_COLOR,10,55,15,15,
+                    BS_BITMAP
+    LTEXT           "Ambient light color",IDC_STATIC,33,57,67,12
+    PUSHBUTTON      "Button3",IDC_BUTTON_BACK_TOP_COLOR,115,15,15,15,
+                    BS_BITMAP
+    LTEXT           "Background top color",IDC_STATIC,139,17,81,12
+    PUSHBUTTON      "Button3",IDC_BUTTON_BACK_BOT_COLOR,115,35,15,15,
+                    BS_BITMAP
+    LTEXT           "Background bottom color",IDC_STATIC,139,38,86,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "fastfieldsolvers\0"
+            VALUE "FileDescription", "fastmodel MFC Application\0"
+            VALUE "FileVersion", "3, 0, 0, 0\0"
+            VALUE "InternalName", "fastmodel\0"
+            VALUE "LegalCopyright", "Copyright (C) 2017 FastFieldSolvers S.R.L.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "fastmodel.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "fastmodel Application\0"
+            VALUE "ProductVersion", "3, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_OGLVIEWPROPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+    ID_INDICATOR_ROW_AND_COLUMN "Row and Column"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "fastmodel"
+    IDR_FASTMODELTYPE       "\nUntitled\nFastModel\nFastmodel Files (*.fsm)\n.fsm\nFastmodel.Document\nFastmodel Document"
+    IDR_FASTHENRYTYPE       "\nUntitled\n\nFastHenry2 Files (*.inp)\n.inp\nFastHenry2.Document\nFastHenry2 Document"
+    IDR_FASTCAPTYPE         "\nUntitled\n\nFastCap2 Files (*.lst)\n.lst\nFastCap2.Document\nFastCap2 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "fastmodel"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Opens Help\nHelp Topics"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_IMPORT_FASTCAP_FILE  "Import a FastCap2 file"
+    ID_IMPORT_FASTHENRY_FILE "Import a FastHenry2 file\nOpen FastHenry2"
+    ID_VIEW_DISPLAY_WIREFRAME 
+                            "Redraw model as wireframe\nDisplay as wireframe"
+    ID_VIEW_DISPLAY_HIDDENLINES 
+                            "Redraw model removing hidden lines\nRemove hidden lines"
+    ID_VIEW_OUTPUT          "Show or hide the output window"
+    ID_FILE_OPEN_FASTHENRY  "Import a FastHenry2 file\nOpen FastHenry2"
+    ID_FILE_SAVEFASTHENRYFILE "Export a FastHenry2 file\nSave FastHenry2"
+    ID_FILE_SAVE_FASTHENRY  "Export the FastHenry2 file\nSave FastHenry2"
+    ID_FILE_SAVE_AS_FASTHENRY 
+                            "Export the FastHenry2 file with a new name\nExport FastHenry2 As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_ZOOMALL        "Autosize model view to show whole model\nAutosize"
+    ID_VIEW_FASTHENRY_VIEW  "Show or hide the FastHenry2 view window"
+    ID_FASTHENRY_UPDATE_MODEL 
+                            "Update the 3D Model View according to the description in Fast Henry View\nUpdate"
+    ID_RUN_FASTHENRY        "Launch FastHenry2\nFastHenry2"
+    ID_FILE_PRINT_TO_EPS    "Print current view to file in EPS format\nCreate EPS file "
+    ID_MODEL_NEW_WINDOW     "Open a new FastModel window\nNew FastModel window"
+    ID_FILE_OPEN_FASTCAP    "Import a FastCap2 file\nOpen FastCa2p"
+    ID_FILE_SAVE_FASTCAP    "Export the FastCap2 file\nSave FastCap2"
+    ID_FILE_SAVE_AS_FASTCAP "Export the FastCap2 file with a new name\nExport FastCap2 As"
+    ID_VIEW_DISPLAY_3D      "View model in 3D\nPerspective view"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_DISPLAY_2D      "View model in 2D\nOrthographic view"
+    ID_VIEW_FASTCAP_VIEW    "Show or hide the FastCap2 view window"
+    ID_VIEW_PROJECT         "Show or hide the project window"
+    ID_FILE_NEW_FASTCAP     "Create a new FastCap2 file and view\nCreate FastCap2 file"
+    ID_FILE_SAVE_FASTCAP_ALL "Save all FastCap2 files\nSave all FastCap2"
+    ID_FILE_OPEN_PROJ       "Open an existing document\nOpen"
+    ID_FILE_NEW_PROJ        "Create a new document\nNew"
+    ID_FILE_CLOSE_PROJ      "Close the active document\nClose"
+    ID_FILE_SAVE_PROJ       "Save the active document\nSave"
+    ID_FILE_SAVE_AS_PROJ    "Save the active document with a new name\nSave As"
+    ID_FILE_CLOSE_FASTCAP   "Close current FastCap2 document\nClose FastCap2 file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSE_FASTHENRY "Close current FastHenry2 document\nClose FastHenry2 file"
+    ID_RUN_FASTCAP          "Launch FastCap2\nFastCap2"
+    ID_VIEW_DISPLAY_SOLID   "Redraw model as solid\nDisplay as solid"
+    ID_VIEW_AUTOSET_XY      "Automatically adjust view to plane XY \nAutoset XY view"
+    ID_VIEW_AUTOSET_YZ      "Automatically adjust view to plane YZ \nAutoset YZ view"
+    ID_VIEW_AUTOSET_ZX      "Automatically adjust view to plane ZX \nAutoset ZX view"
+    ID_VIEW_PROPERTIES      "View properties \nView properties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RUN_FASTERCAP        "Launch FasterCap\nFasterCap"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TEXT_FILE           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_PROJECT             ICON    DISCARDABLE     "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CONTROLTABS         BITMAP  DISCARDABLE     "RES\\controltabs.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_FASTHENRYTYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Update Model",               ID_FASTHENRY_UPDATE_MODEL
+    END
+END
+
+CG_IDR_POPUP_MAIN_FRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Fast&Cap2 View",              ID_VIEW_FASTCAP_VIEW
+        MENUITEM "Fast&Henry2 View",            ID_VIEW_FASTHENRY_VIEW
+        MENUITEM "&Project Window",             ID_VIEW_PROJECT
+        MENUITEM "&Output Window",              ID_VIEW_OUTPUT
+    END
+END
+
+CG_IDR_POPUP_FAST_MODEL_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT, GRAYED
+        MENUITEM "&Copy",                       ID_EDIT_COPY, GRAYED
+        MENUITEM "&Paste",                      ID_EDIT_PASTE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Zoom All",                   ID_VIEW_ZOOM_ALL
+        POPUP "&Display"
+        BEGIN
+            MENUITEM "&Wireframe",                  ID_VIEW_DISPLAY_WIREFRAME
+
+            MENUITEM "&Hidden Lines",               ID_VIEW_DISPLAY_HIDDENLINES
+
+            MENUITEM "&Solid",                      ID_VIEW_DISPLAY_SOLID
+        END
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&3D (Perspective)",           ID_VIEW_DISPLAY_3D
+            MENUITEM "&2D (Orthographic)",          ID_VIEW_DISPLAY_2D
+        END
+        POPUP "&Autoset"
+        BEGIN
+            MENUITEM "&XY Plane",                   ID_VIEW_AUTOSET_XY
+            MENUITEM "&YZ Plane",                   ID_VIEW_AUTOSET_YZ
+            MENUITEM "&ZX Plane",                   ID_VIEW_AUTOSET_ZX
+        END
+        MENUITEM "&Properties",                 ID_VIEW_PROPERTIES
+    END
+END
+
+IDR_POPUP_FASTCAPTYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Update Model",               ID_FASTCAP_UPDATE_MODEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LICENSE DIALOG DISCARDABLE  0, 0, 278, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "License"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,81,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,140,50,14
+    EDITTEXT        IDC_LICENSE,12,45,253,87,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+    CTEXT           "FastModel License\nCopyright 2017 FastFieldSolvers S.R.L.",
+                    IDC_EXPIRY,13,10,252,18
+    CTEXT           "http://www.fastfieldsolvers.com, All Rights Reserved",
+                    IDC_STATIC,13,31,253,14
+END
+
+IDD_DIALOG_PROJECT DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Project"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE_PROJECT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_TABSTOP,0,0,187,95
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\fastmodel.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_FAR_ROTATE          CURSOR  DISCARDABLE     "RES\\rotate_far.cur"
+IDC_NEAR_ROTATE         CURSOR  DISCARDABLE     "RES\\rotate_near.cur"
+IDC_ZOOM                CURSOR  DISCARDABLE     "RES\\zoom.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING1             "("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_DISPLAY_WIREFRAME 
+                            "Redraw model as wireframe\nDisplay as wireframe"
+    ID_VIEW_DISPLAY_HIDDENLINES 
+                            "Redraw model removing hidden lines\nRemove hidden lines"
+    ID_VIEW_OUTPUT          "Show or hide the output window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_ZOOMALL        "Autosize model view to show whole model\nAutosize"
+    ID_POPUP_FASTHENRYVIEW  "Show or hide the FastHenry2 View Window"
+    ID_VIEW_FASTHENRY_VIEW  "Show or hide the FastHenry2 view window"
+    ID_POPUP_UPDATEMODEL    "Update the Model View according to the description in FastHenry2 View\nUpdate"
+    ID_FASTHENRY_UPDATE_MODEL 
+                            "Update the 3D Model View according to the description in FastHenry2 View\nUpdate"
+    ID_VIEW_DISPLAY_3D      "View model in 3D\nPerspective view"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_DISPLAY_2D      "View model in 2D\nOrthographic view"
+    ID_VIEW_DISPLAY_2DXY    "View model in 2D on plane XY \nOrthographic XY view"
+    ID_VIEW_AUTOSET2D_XY    "Automatically adjust 2D view to plane XY \nAutoset XY view"
+    ID_VIEW_AUTOSET2D_YZ    "Automatically adjust 2D view to plane YZ \nAutoset YZ view"
+    ID_VIEW_AUTOSET2D_ZX    "Automatically adjust 2D view to plane ZX \nAutoset ZX view"
+    ID_FASTCAP_UPDATE_MODEL "Update the 3D Model View according to the description in FastCap2 View\nUpdate"
+    ID_VIEW_FASTCAP_VIEW    "Show or hide the FastCap2 view window"
+    ID_VIEW_PROJECT         "Show or hide the project window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_DISPLAY_SOLID   "Redraw model as solid\nDisplay as solid"
+    ID_VIEW_AUTOSET_XY      "Automatically adjust view to plane XY \nAutoset XY view"
+    ID_VIEW_AUTOSET_YZ      "Automatically adjust view to plane YZ \nAutoset YZ view"
+    ID_VIEW_AUTOSET_ZX      "Automatically adjust view to plane ZX \nAutoset ZX view"
+    ID_VIEW_PROPERTIES      "View properties \nView properties"
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\fastmodel.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

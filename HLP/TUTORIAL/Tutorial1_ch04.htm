@@ -1,0 +1,47 @@
+<!doctype html public "-//w3c//dtd html 4.0 frameset//en">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Enrico Di Lorenzo">
+  <meta name="Generator" content="Enrico Di Lorenzo">
+  <meta name="Description" content="Help File">
+  <meta name="Version" content="050510">
+  <title>FastModel Tutorial</title>
+  <link href="helpstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<BODY>
+
+<H1>Load FastCap2 input files</H1>
+
+To load a FastCap2 input file:
+
+<ol>
+  <li>Select the FastCap2 View (the view should be in foreground with the caption highlighted).
+  <li>From the <b>File</b> menu select <b>File->Open FastCap2 File</b> or click on the <img src="images/openicon.png"> icon on the toolbar.
+  <li>Browse to the 'Shared Documents' folder (in the English version of Windows XP, this usually is 'C:\Documents and Settings\All Users\Shared Documents', or in Windows Vista and Windows 7, this usually is the folder 'Public') and under <i>FastFieldSolvers\FastCap2</i> select the file <i>coated_sph.lst</i>, then click <b>Open</b>.
+</ol>
+
+<p>The cursor will change to a glasshour until the file is imported into FastModel. As soon as the import finishes, you should be able to see the 3D model of the coated sphere in the FastModel View.
+<p>You will also notice that the FastCap2 View now contains the input file and that the file has been colored according to the input semantic. You can type in the view and see the colors change according to what you write.
+<p>Moreover, in the Browser Window you should see near the FastCap2 icon a '+' mark, showing that more than one file has been loaded.
+
+<ol>
+  <li>Click on the '+' mark near the FastCap2 icon in the Browser Window to expand the list.
+  <li>Double click on the name 'sphere2.qui'. You will see another window appear in foreground.
+</ol>
+
+<p><img src="images/BrowserWindowCoatedSphere.png">
+
+<p> This is because FastCap2 files, unlike FastHenry2 ones, can have a 2-level hyerarchy. A main file can refer to any number of subfiles. This eases the task to manage big models and provide a simple way to specify dielectric interfaces, as you will see in the FastCap2 tutorials.
+
+<ol>
+  <li>Select the FastCap2 View and from the <b>File</b> menu choose <b>File->Close FastCap2 File</b> to close the file.
+</ol>
+
+<p><a href="images/FastCapCoatedSphere.png"><img src="images/FastCapCoatedSphere.png" width=512 height=387 border=0></a>
+
+</body>
+</html>
+

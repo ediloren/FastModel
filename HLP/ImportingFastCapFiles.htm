@@ -1,0 +1,43 @@
+<!doctype html public "-//w3c//dtd html 4.0 frameset//en">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Enrico Di Lorenzo">
+  <meta name="GENERATOR" content="Enrico Di Lorenzo">
+  <meta name="DESCRIPTION" content="Help File">
+  <title>Welcome to FastModel</title>
+  <link href="helpstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<BODY>
+
+<H1>Importing FasterCap / FastCap2 Files</H1>
+
+<p>To import a FasterCap / FastCap2 file, activate the FastCap2 window by clicking on it, then select <b>File->Open FastCap2 File</b> from the main menu (do not select the <b>Open Project</b>) and browse to your file. 
+
+You will notice that you can import either .lst, .neu or .qui / .txt files; the distinction is the same as in FastCap2 (for details, see <a href="Manuals.htm">FastCap2 manual</a>):
+
+<ul>
+  <li>The <b>.lst</b> files are list files, that is, they contain references to other files to be hierarchically included 
+  <li>The <b>.qui</b> / <b>.txt</b> files are generic-format input files (files containing 'Q' or 'T' definitions
+  <li>The <b>.neu</b> files are Patran input files. Remark: Patran input files are <b>not</b> supported by FasterCap.
+</ul>
+
+<p>Note, however, that though FastModel does not distinguish between .lst and .qui files, FastCap2 does, so it is recommended to work with the default extensions.
+<br>On the other hand, the only files recognized as Patran format input files are those whose extension is .neu.
+<br>In case of FasterCap, all files can be hierarchical, so there is no distinction between a .lst, .qui or .txt file.
+
+<p>When you have performed your selection, the file(s) will be imported. This could take some time if the input file is large, please be patient. At the end you should see your file in the FastCap2 View, with keywords highlighted in color, and a view of your model in the FastModel View. 
+
+<p>Any error occurred while importing will be reported in the Output Window. 
+
+<p>If you import a list file, FastModel will open as many windows as the number of different files referenced in the list file. These windows are minimized by default; you can activate them by clicking on the captions (you may need to move the windows in foreground to see them) or selecting them in the Project Browser.
+
+<p>The Project Browser will keep trace of all open FastCap2 files. Note that there will always be a main FastCap2 View, usually corresponding to the list (.lst) file, and any number of secondary FastCap2 windows, usually corresponding to files included by the list file. As you could also generate included files from scratch, you can open new, blank FastCap2 secondary windows by selecting 'New FastCap2 File' from the 'File' menu. 
+<br>See <a href="ProjectBrowserWindow.htm">Project Browser Window</a> for more information on the Project Browser.
+
+<p><b>Remark: Patran input files can be imported but they cannot be edited inside FastModel.</b>
+
+</body>
+</html>

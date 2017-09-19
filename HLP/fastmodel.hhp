@@ -1,0 +1,14 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=fastmodel.chm
+Contents file=fastmodel.hhc
+Default Window=mainwin
+Display compile progress=Yes
+Language=0x409 English (United States)
+Title=FastModel Help
+
+[WINDOWS]
+mainwin="FastModel Help","FastModel.hhc",,"WelcometoFastModel.htm","WelcometoFastModel.htm",,,,,0x2020,,0x3806,[0,0,640,450],0x30000,,,,,,0
+
+[INFOTYPES]
+
