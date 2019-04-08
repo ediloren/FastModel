@@ -1967,9 +1967,9 @@ void CImportFastHenry::makeUniformGndPlane(CGroundPlane *gp)
 			// find the components in the direction of the plane edges of the vector
 			// connecting the 'node nearest to the centre' to the 'centre of the circle'
 			// (that is, the offset of the centre node in respect to the real centre)
-			offset.sx = tmphole->m_dValues[0] - gp->m_clNodeMatrix[i1][j1].m_dX;
-			offset.sy = tmphole->m_dValues[1] - gp->m_clNodeMatrix[i1][j1].m_dY;
-			offset.sz = tmphole->m_dValues[2] - gp->m_clNodeMatrix[i1][j1].m_dZ;
+			offset.sx = gp->m_clNodeMatrix[i1][j1].m_dX - tmphole->m_dValues[0];
+			offset.sy = gp->m_clNodeMatrix[i1][j1].m_dY - tmphole->m_dValues[1];
+			offset.sz = gp->m_clNodeMatrix[i1][j1].m_dZ - tmphole->m_dValues[2];
 			offsetx = dotProduct(offset, gp->m_clVersor1);
 			offsety = dotProduct(offset, gp->m_clVersor2);
 

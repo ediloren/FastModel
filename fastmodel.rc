@@ -395,9 +395,9 @@ CAPTION "About FastModel"
 FONT 8, "MS Sans Serif"
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "FastModel Version 3.0",IDC_STATIC,40,15,119,8,
+    LTEXT           "FastModel Version 3.0.1",IDC_STATIC,40,15,119,8,
                     SS_NOPREFIX
-    LTEXT           "Copyright (C) 2017 FastFieldSolvers S.R.L.",IDC_STATIC,
+    LTEXT           "Copyright (C) 2019 FastFieldSolvers S.R.L.",IDC_STATIC,
                     39,30,148,8
     DEFPUSHBUTTON   "OK",IDOK,171,57,32,14,WS_GROUP
     LTEXT           "http://www.fastfieldsolvers.com",IDC_STATIC,39,41,144,8
@@ -454,14 +454,14 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "fastfieldsolvers\0"
             VALUE "FileDescription", "fastmodel MFC Application\0"
-            VALUE "FileVersion", "3, 0, 0, 0\0"
+            VALUE "FileVersion", "3, 0, 1, 0\0"
             VALUE "InternalName", "fastmodel\0"
-            VALUE "LegalCopyright", "Copyright (C) 2017 FastFieldSolvers S.R.L.\0"
+            VALUE "LegalCopyright", "Copyright (C) 2019 FastFieldSolvers S.R.L.\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "fastmodel.EXE\0"
             VALUE "PrivateBuild", "\0"
             VALUE "ProductName", "fastmodel Application\0"
-            VALUE "ProductVersion", "3, 0, 0, 0\0"
+            VALUE "ProductVersion", "3, 0, 1, 0\0"
             VALUE "SpecialBuild", "\0"
         END
     END
@@ -835,7 +835,7 @@ BEGIN
     PUSHBUTTON      "Cancel",IDCANCEL,143,140,50,14
     EDITTEXT        IDC_LICENSE,12,45,253,87,ES_MULTILINE | ES_AUTOVSCROLL | 
                     ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
-    CTEXT           "FastModel License\nCopyright 2017 FastFieldSolvers S.R.L.",
+    CTEXT           "FastModel License\nCopyright 2019 FastFieldSolvers S.R.L.",
                     IDC_EXPIRY,13,10,252,18
     CTEXT           "http://www.fastfieldsolvers.com, All Rights Reserved",
                     IDC_STATIC,13,31,253,14
